@@ -15,7 +15,6 @@ NC='\033[0m'
 for i in ${!ip[@]};
 do 
     timeout 0.2 ping -c1 $i > /dev/null ;
-    ( [[ $? -eq 0 ]] && echo -e "Connection to ${ip[$i]} .......... ${GREEN}SUCCESS${NC}" ) \ 
-|| echo -e "Connection to ${ip[$i]} .......... ${RED}FAILED${NC}" ;
+    ( [[ $? -eq 0 ]] && echo -e "Connection to ${ip[$i]} .......... ${GREEN}SUCCESS${NC}" ) || echo -e "Connection to ${ip[$i]} .......... ${RED}FAILED${NC}" ;
 done | column -t
 
