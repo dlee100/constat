@@ -1,2 +1,5 @@
-ip[127.0.0.1]=LOCALHOST
-
+ip[127.0.0.1]=localhost
+ip[192.168.1.238]=pc-workhorse
+ip[192.168.1.101]=rpi-vpn
+ip[192.168.1.250]=thinkpad
+ip[192.168.1.247]=m4700

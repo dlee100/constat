@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # Run with `watch' command for constant monitoring: 
 # watch -n1 --color ./conmon.sh
@@ -15,6 +15,6 @@ NC='\033[0m'
 for i in ${!ip[@]};
 do 
     timeout 0.2 ping -c1 $i > /dev/null ;
-    ( [[ $? -eq 0 ]] && echo -e "Connection to ${ip[$i]} .......... ${GREEN}SUCCESS${NC}" ) || echo -e "Connection to ${ip[$i]} .......... ${RED}FAILED${NC}" ;
+    ( [[ $? -eq 0 ]] && echo -e "${ip[$i]} .......... ${GREEN}CONNECTED${NC}" ) || echo -e "${ip[$i]} .......... ${RED}DISCONNECTED${NC}" ;
 done | column -t
 
