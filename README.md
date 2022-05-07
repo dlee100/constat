@@ -11,6 +11,10 @@ Example: `ip[127.0.0.1]=LOCALHOST`
 2. Run the script: `watch -n1 --color ./constat.sh`
 
 ## Incoming 2022:
-[ ] Text-based user prompt to enter node ip-address and node name.
+[ ] Be able to run constantly with one command. `constat`
 
-[ ] Be able to run with one command.
+[ ] Be able to output once with one command. `constat once`
+
+[ ] Text-based user prompt to enter node ip-address and node name. `constat add`
+
+[ ] Be able to edit ip_list, summoned by a command. `constat edit`
