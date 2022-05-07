@@ -9,3 +9,8 @@ Must write in this format: `ip[#.#.#.#]=DEVICE-NAME`
 Example: `ip[127.0.0.1]=LOCALHOST`
 
 2. Run the script: `watch -n1 --color ./conmon.sh`
+
+## Incoming 2022:
+[ ] Text-based user prompt to enter node ip-address and node name.
+
+[ ] Shell script to insert and enable the alias automatically.
