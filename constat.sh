@@ -7,14 +7,17 @@
 # I also dropped this program in my /etc/ so that is why the text file is explicitly stated in the declare function.
 
 # Inputting data from text file and making it an associative array.
-declare -A ip $(cat ~/constat/ip_list.txt)
+
+PWD=$(pwd)
+
+declare -A ip $(cat ${PWD}/ip_list.txt)
 
 # Colors for text.
 GREEN='\033[0;32m'
 RED='\033[0;31m'
 NC='\033[0m'
 
-echo "Current connection status of listed nodes in the LAN."
+# echo "Current connection status of listed nodes in the LAN."
 
 # Loop through the array.
 for i in ${!ip[@]};
